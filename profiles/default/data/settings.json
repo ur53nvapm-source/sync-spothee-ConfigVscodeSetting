@@ -1,0 +1,409 @@
+{
+  //`start v001 profile: default
+  // * ============================================================
+  // * Config VSCODE - SETTINGS.JSON
+  // * @author: apm | partner: AI | version: beta v0.1
+  // * Theme: Gruvbox Material Dark | Mode: Power Saving
+  // * ============================================================
+  // * MỤC LỤC - Menu
+  // * ───────────────────────────────────────────────────────────
+  // * [`01].QUICK TOGGLE      - Cài đặt thay đổi nhanh (Theme, Font, Zoom)
+  // * [`02].WORKBENCH         - Bố cục, tab, sidebar và hiệu ứng UI
+  // * [`03].COLOR             - Tùy chỉnh màu sắc giao diện (Glassmorphism)
+  // * [`04].EDITOR            - Hiển thị, con trỏ, minimap và guide
+  // * [`05].TERMINAL          - Shell, font chữ, lịch sử lệnh
+  // * [`06].SUGGEST           - Bảng gợi ý code (IntelliSense)
+  // * [`07].FILES & EXPLORER  - Quản lý file, tìm kiếm, loại trừ
+  // * [`08].GIT               - Cấu hình Git, Sync Settings
+  // * [`09].MISC & AI         - Cài đặt AI, Chat, Debug, ErrorLens
+  // * [`10].TELEMETRY         - Dữ liệu, bảo mật, cập nhật extension
+  // * [`11].EXTENSION         - Cấu hình riêng cho các extension
+  // * ============================================================
+  // * ------------------------------------------------------------
+  // * CẤU HÌNH BETTER COMMENTS (Tag màu cho comment) - [`11].Extension
+  // * ------------------------------------------------------------
+  "better-comments.tags": [
+    {
+      "tag": "*", // * - Heading - Xanh lá (Tiêu đề)
+      "color": "#a9b665",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?", // ? - Info - Xanh dương (Thông tin)
+      "color": "#7daea3",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "!", // ! - Warning - Đỏ (Cảnh báo)
+      "color": "#ea6962",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "TODO", // TODO - Task - Cam (Việc cần làm)
+      "color": "#e78a4e",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "//", // // - Disabled - Xám (Code cũ, tạm ẩn)
+      "color": "#928374",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  // * ------------------------------------------------------------
+  // * [`01].QUICK TOGGLE - Cài đặt thay đổi nhanh (Theme, Font, Zoom)
+  // * ------------------------------------------------------------
+  "workbench.colorTheme": "Best Themes - Gruvbox Material Dark", // ? colorTheme - Giao diện - Gruvbox Dark
+  "workbench.iconTheme": "file-icons", // ? iconTheme - Icon - File Icons
+  "glassit.alpha": 249, // * alpha - Độ trong suốt cửa sổ - 249/255
+  "window.zoomLevel": -0.6, // ? zoomLevel - Thu nhỏ UI
+  "editor.fontSize": 14.855, // ? fontSize - Cỡ chữ editor
+  "editor.fontWeight": "251", // ! fontWeight - Độ đậm chữ - Light
+  "editor.lineHeight": 1.9755, // ? lineHeight - Chiều cao dòng - 197.5%
+  "editor.letterSpacing": 1.25, // ? letterSpacing - Khoảng cách chữ - 1.25px
+  // * ------------------------------------------------------------
+  // * [`02].WORKBENCH - Bố cục, tab, sidebar và hiệu ứng UI
+  // * ------------------------------------------------------------
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench", // ? startupEditor - Khởi động - Welcome Page
+  "workbench.editor.enablePreview": false, // * enablePreview - Tab - Mở tab thật
+  "workbench.editor.wrapTabs": true, // ? wrapTabs - Tab - Tự động xuống dòng
+  "workbench.editor.showTabs": "multiple", // ? showTabs - Tab - Hiển thị nhiều tab
+  "workbench.editor.limit.enabled": true, // ! limit.enabled - Giới hạn tab - Bật (Tiết kiệm RAM)
+  "workbench.editor.limit.value": 20, // ? limit.value - Giới hạn tab - Tối đa 20
+  "workbench.editor.limit.excludeDirty": true, // ! limit.excludeDirty - Giới hạn tab - Giữ tab chưa lưu
+  "workbench.sideBar.location": "right", // ? sideBar.location - Sidebar - Bên phải
+  "workbench.activityBar.compact": true, // ? activityBar.compact - Thanh hoạt động - Thu gọn
+  "workbench.tree.indent": 19, // ? tree.indent - Thụt lề cây - 19px
+  "workbench.tree.renderIndentGuides": "always", // ? renderIndentGuides - Đường kẻ - Luôn hiện
+  "workbench.tree.enableStickyScroll": false, // ! tree.stickyScroll - Cây thư mục - Tắt ghim
+  "workbench.list.smoothScrolling": false, // ! list.smoothScrolling - Cuộn mượt - Tắt (Đỡ CPU)
+  "workbench.list.horizontalScrolling": false, // ! list.horizontalScrolling - Cuộn ngang - Tắt
+  "workbench.reduceMotion": "on", // ! reduceMotion - Hiệu ứng động - Giảm (Đỡ GPU)
+  "workbench.browser.showInTitleBar": true, // ? browser.showInTitleBar - Trình duyệt - Hiện trên Title Bar
+  "workbench.editor.showIcons": true, // ? editor.showIcons - Icon tab - Hiện
+  "workbench.navigationControl.enabled": true, // ? navigationControl - Điều hướng - Hiện nút Back/Forward
+  "workbench.experimental.share.enabled": true, // ? share.enabled - Chia sẻ không gian làm việc
+  "window.titleBarStyle": "custom", // ? titleBarStyle - Title bar - Tự vẽ
+  "window.controlsStyle": "custom", // ? controlsStyle - Nút điều khiển - Tự vẽ
+  "window.menuBarVisibility": "compact", // ? menuBarVisibility - Thanh menu - Thu gọn
+  "window.autoDetectColorScheme": false, // ? autoDetectColorScheme - Theme OS - Tắt tự đổi
+  "window.systemColorTheme": "dark", // ? systemColorTheme - Theme OS - Tối
+  "window.density.layout": "compact", // ? density.layout - Bố cục - Thon gọn
+  "window.customMenuBarAltFocus": true, // ? customMenuBarAltFocus - Menu bar - Nhấn Alt để hiện
+  "update.mode": "manual", // ! update.mode - Cập nhật - Thủ công
+  // * ------------------------------------------------------------
+  // * [`03].COLOR - Tùy chỉnh màu sắc giao diện (Glassmorphism)
+  // * ------------------------------------------------------------
+  "workbench.colorCustomizations": {
+    // Nền chính - Primary Background
+    "editor.background": "#202020cc", // ? editor.background - Nền editor - #202020 (80%)
+    "editorPane.background": "#20202000", // ? editorPane.background - Nền pane - Trong suốt
+    "sideBar.background": "#202020cc", // ? sideBar.background - Nền sidebar - #202020 (80%)
+    "sideBarTitle.background": "#202020cc", // ? sideBarTitle.background - Nền tiêu đề - #202020 (80%)
+    "sideBar.foreground": "#9aa3ab", // ? sideBar.foreground - Chữ sidebar - #9aa3ab
+    "activityBar.background": "#202020cc", // ? activityBar.background - Nền activity - #202020 (80%)
+    "panel.background": "#20202000", // ? panel.background - Nền panel - Trong suốt
+    "terminal.background": "#00000000", // ? terminal.background - Nền terminal - Trong suốt
+    "minimap.background": "#202020cc", // ? minimap.background - Nền minimap - #202020 (80%)
+    // Tab
+    "tab.activeBackground": "#20202000", // ? tab.activeBackground - Tab active - Trong suốt
+    "tab.inactiveBackground": "#202020cc", // ? tab.inactiveBackground - Tab inactive - #202020 (80%)
+    "tab.unfocusedActiveBackground": "#20202000", // ? tab.unfocusedActiveBackground - Tab active (mất focus) - Trong suốt
+    "tab.unfocusedInactiveBackground": "#202020cc", // ? tab.unfocusedInactiveBackground - Tab inactive (mất focus) - #202020 (80%)
+    "tab.border": "#00000000", // ! tab.border - Viền tab - Ẩn
+    "tab.activeBorder": "#00000000", // ! tab.activeBorder - Viền dưới tab active - Ẩn
+    "tab.activeBorderTop": "#5c9cd6", // * tab.activeBorderTop - Vạch trên tab active - #5c9cd6
+    "tab.activeForeground": "#b0b8c0", // ? tab.activeForeground - Chữ tab active - #b0b8c0
+    "tab.inactiveForeground": "#78828b", // ? tab.inactiveForeground - Chữ tab inactive - #78828b
+    "editorGroupHeader.tabsBackground": "#20202000", // ? tabsBackground - Nền vùng chứa tab - Trong suốt
+    "editorGroupHeader.noTabsBackground": "#20202000", // ? noTabsBackground - Nền không có tab - Trong suốt
+    "editorGroupHeader.border": "#00000000", // ! editorGroupHeader.border - Viền vùng chứa tab - Ẩn
+    "editorGroup.border": "#3c3c3c80", // ? editorGroup.border - Viền nhóm editor - #3c3c3c (50%)
+    // Breadcrumb / Gutter / Line
+    "breadcrumb.background": "#20202000", // ? breadcrumb.background - Nền breadcrumb - Trong suốt
+    "editorGutter.background": "#00000000", // ? editorGutter.background - Nền gutter - Trong suốt
+    "editor.lineHighlightBackground": "#ffffff0d", // ? lineHighlightBackground - Nền dòng hiện tại - #ffffff (5%)
+    "editor.lineHighlightBorder": "#00000000", // ! lineHighlightBorder - Viền dòng hiện tại - Ẩn
+    // Widget / Popup / Menu
+    "editorWidget.background": "#2d2d2de6", // ? editorWidget.background - Nền widget - #2d2d2d (90%)
+    "editorWidget.border": "#3c3c3c", // ? editorWidget.border - Viền widget - #3c3c3c
+    "editorHoverWidget.background": "#2d2d2de6", // ? editorHoverWidget.background - Nền tooltip - #2d2d2d (90%)
+    "editorHoverWidget.border": "#3c3c3c", // ? editorHoverWidget.border - Viền tooltip - #3c3c3c
+    "editorSuggestWidget.background": "#2d2d2de6", // ? editorSuggestWidget.background - Nền gợi ý - #2d2d2d (90%)
+    "editorSuggestWidget.border": "#3c3c3c", // ? editorSuggestWidget.border - Viền gợi ý - #3c3c3c
+    "editorSuggestWidget.selectedBackground": "#3a3a3a", // ? selectedBackground - Nền item chọn - #3a3a3a
+    "inlineChat.background": "#2d2d2de6", // ? inlineChat.background - Nền chat - #2d2d2d (90%)
+    "notifications.background": "#2d2d2de6", // ? notifications.background - Nền thông báo - #2d2d2d (90%)
+    "notifications.border": "#3c3c3c", // ? notifications.border - Viền thông báo - #3c3c3c
+    "notificationCenterHeader.background": "#2d2d2de6", // ? notificationCenterHeader - Nền header - #2d2d2d (90%)
+    "quickInput.background": "#2d2d2de6", // ? quickInput.background - Nền Ctrl+P - #2d2d2d (90%)
+    "quickInputList.focusBackground": "#3a3a3a", // ? quickInputList.focusBackground - Nền item chọn - #3a3a3a
+    // Menu
+    "menu.background": "#2d2d2de6", // ? menu.background - Nền menu - #2d2d2d (90%)
+    "menu.border": "#3c3c3c", // ? menu.border - Viền menu - #3c3c3c
+    "menu.foreground": "#b0b8c0", // ? menu.foreground - Chữ menu - #b0b8c0
+    "menu.selectionBackground": "#3a3a3a", // ? menu.selectionBackground - Nền item chọn - #3a3a3a
+    "menu.selectionForeground": "#b0b8c0", // ? menu.selectionForeground - Chữ item chọn - #b0b8c0
+    "menu.separatorBackground": "#3c3c3c", // ? menu.separatorBackground - Đường phân cách - #3c3c3c
+    "menubar.selectionBackground": "#3a3a3a", // ? menubar.selectionBackground - Nền hover - #3a3a3a
+    "menubar.selectionForeground": "#b0b8c0", // ? menubar.selectionForeground - Chữ hover - #b0b8c0
+    // Activity Bar
+    "activityBar.foreground": "#a8b2bb", // ? activityBar.foreground - Icon active - #a8b2bb
+    "activityBar.inactiveForeground": "#808080", // ? inactiveForeground - Icon inactive - #808080
+    "activityBarBadge.background": "#5c9cd6", // ? activityBarBadge.background - Nền badge - #5c9cd6
+    "activityBarBadge.foreground": "#202020", // ? activityBarBadge.foreground - Chữ badge - #202020
+    // Status Bar
+    "statusBar.background": "#202020f2", // ? statusBar.background - Nền status bar - #202020 (95%)
+    "statusBar.foreground": "#88929b", // ? statusBar.foreground - Chữ status bar - #88929b
+    "statusBar.border": "#00000000", // ! statusBar.border - Viền status bar - Ẩn
+    "statusBar.noFolderBackground": "#202020f2", // ? noFolderBackground - Nền không folder - #202020 (95%)
+    "statusBarItem.remoteBackground": "#5c9cd6", // ? remoteBackground - Nền remote - #5c9cd6
+    "statusBarItem.remoteForeground": "#202020", // ? remoteForeground - Chữ remote - #202020
+    // Title Bar
+    "titleBar.activeBackground": "#202020e6", // ? titleBar.activeBackground - Nền active - #202020 (90%)
+    "titleBar.inactiveBackground": "#202020cc", // ? titleBar.inactiveBackground - Nền inactive - #202020 (80%)
+    "titleBar.activeForeground": "#b8c0c8", // ? titleBar.activeForeground - Chữ active - #b8c0c8
+    // Editor Text
+    "editor.foreground": "#b0b8c0", // ? editor.foreground - Chữ code - #b0b8c0
+    "editorCursor.foreground": "#398a6d9e", // * editorCursor.foreground - Con trỏ - #398a6d
+    "editorLineNumber.foreground": "#7c6f64", // ? editorLineNumber.foreground - Số dòng - #7c6f64
+    "editorLineNumber.activeForeground": "#e06c75", // * activeForeground - Số dòng active - #e06c75
+    "editor.selectionBackground": "#3e4451aa", // ? selectionBackground - Nền bôi đen - #3e4451
+    "editor.inactiveSelectionBackground": "#3a3d41aa", // ? inactiveSelectionBackground - Nền bôi đen mất focus - #3a3d41
+    // Scrollbar
+    "scrollbar.shadow": "#00000000", // ! scrollbar.shadow - Bóng đổ - Ẩn
+    "scrollbarSlider.background": "#3c3c3c80", // ? scrollbarSlider.background - Nền thanh trượt - #3c3c3c
+    "scrollbarSlider.hoverBackground": "#4c4c4c80", // ? hoverBackground - Nền hover - #4c4c4c
+    "scrollbarSlider.activeBackground": "#5c9cd680", // ? activeBackground - Nền kéo - #5c9cd6
+    // Bracket
+    "editorBracketHighlight.foreground1": "#5c9bd6d8", // ? foreground1 - Cấp 1 - Xanh dương
+    "editorBracketHighlight.foreground2": "#d19a66", // ? foreground2 - Cấp 2 - Cam
+    "editorBracketHighlight.foreground3": "#98c379", // ? foreground3 - Cấp 3 - Xanh lá
+    "editorBracketHighlight.foreground4": "#c678dd", // ? foreground4 - Cấp 4 - Tím
+    "editorBracketHighlight.foreground5": "#e06c75", // ? foreground5 - Cấp 5 - Hồng
+    "editorBracketHighlight.foreground6": "#56b6c2", // ? foreground6 - Cấp 6 - Cyan
+    "editorBracketHighlight.unexpectedBracket.foreground": "#e06c75", // ! unexpectedBracket - Ngoặc lỗi - Hồng
+    "editorBracketMatch.background": "#00000000", // ! editorBracketMatch.background - Nền ngoặc khớp - Ẩn
+    "editorBracketMatch.border": "#00000000", // ! editorBracketMatch.border - Viền ngoặc khớp - Ẩn
+    // Diagnostics
+    "editorError.foreground": "#e06c75", // ! editorError.foreground - Lỗi - Đỏ
+    "editorWarning.foreground": "#00000000", // ! editorWarning.foreground - Cảnh báo - Ẩn
+    "editorInfo.foreground": "#00000000", // ! editorInfo.foreground - Thông tin - Ẩn
+    "editorHint.foreground": "#00000000", // ! editorHint.foreground - Gợi ý - Ẩn
+    // Sticky Scroll
+    "editorStickyScroll.background": "#202020cc", // ? editorStickyScroll.background - Nền editor - #202020 (80%)
+    "editorStickyScrollGutter.background": "#202020cc", // ? editorStickyScrollGutter - Nền gutter - #202020 (80%)
+    "sideBarStickyScroll.background": "#202020cc", // ? sideBarStickyScroll - Nền sidebar - #202020 (80%)
+    "panelStickyScroll.background": "#202020cc", // ? panelStickyScroll - Nền panel - #202020 (80%)
+    "terminalStickyScroll.background": "#202020cc", // ? terminalStickyScroll - Nền terminal - #202020 (80%)
+    // Git scmGraph - Fix lỗi mất chữ trên nhãn branch
+    "scmGraph.historyItemHoverLabelForeground": "#171717", // ? Chữ đậm
+    "scmGraph.historyItemHoverDefaultLabelForeground": "#171717", // ? Chữ đậm
+    "scmGraph.historyItemHoverDefaultLabelBackground": "#ebdbb284" // ? Nền vàng nhạt Gruvbox
+  },
+  // * ------------------------------------------------------------
+  // * [`04].EDITOR - Hiển thị, con trỏ, minimap và guide
+  // * ------------------------------------------------------------
+  "editor.fontFamily": "'Cascadia Code', 'Ubuntu Mono', 'DejaVu Sans Mono', monospace", // ? fontFamily - Font chữ - Hỗ trợ Win/Linux
+  "editor.fontLigatures": false, // ! fontLigatures - Gộp ký tự - Tắt
+  "editor.fontVariations": false, // ! fontVariations - Biến thể font - Tắt
+  "editor.lineNumbers": "on", // ? lineNumbers - Số dòng - Tuyệt đối
+  "editor.wordWrap": "on", // ? wordWrap - Xuống dòng - Bật
+  "editor.cursorWidth": 3, // ? cursorWidth - Độ rộng con trỏ - 3px
+  "editor.cursorHeight": 100, // ? cursorHeight - Chiều cao con trỏ - 100%
+  "editor.cursorBlinking": "solid", // ! cursorBlinking - Nhấp nháy - Tắt
+  "editor.renderLineHighlight": "none", // ! renderLineHighlight - Tô nền dòng - Tắt
+  "editor.renderLineHighlightOnlyWhenFocus": true, // ? renderLineHighlightOnlyWhenFocus - Tô nền dòng - Chỉ khi focus
+  "editor.renderWhitespace": "none", // ! renderWhitespace - Khoảng trắng - Ẩn
+  "editor.occurrencesHighlightDelay": 200, // ? occurrencesHighlightDelay - Delay highlight - 200ms
+  "editor.minimap.enabled": true, // ? minimap.enabled - Minimap - Bật
+  "editor.minimap.renderCharacters": false, // ! renderCharacters - Ký tự minimap - Tắt
+  "editor.minimap.maxColumn": 80, // ? maxColumn - Cột tối đa - 80
+  "editor.minimap.showSlider": "always", // ? showSlider - Thanh trượt - Luôn hiện
+  "editor.stickyScroll.enabled": false, // ! stickyScroll.enabled - Sticky scroll - Tắt
+  "editor.stickyScroll.scrollWithEditor": false, // ! scrollWithEditor - Cuộn sticky - Tắt
+  "editor.guides.bracketPairs": "active", // ? guides.bracketPairs - Guide ngoặc - Active
+  "editor.guides.bracketPairsHorizontal": false, // ! bracketPairsHorizontal - Guide ngang - Tắt
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true, // ? independentColorPoolPerBracketType - Màu ngoặc - Độc lập
+  "editor.linkedEditing": true, // * linkedEditing - Sửa thẻ HTML - Bật
+  "editor.hover.delay": 500, // ? hover.delay - Delay tooltip - 500ms
+  "editor.hover.sticky": true, // ? hover.sticky - Tooltip dính - Bật
+  "editor.lightbulb.enabled": "off", // ! lightbulb.enabled - Bóng đèn gợi ý - Tắt
+  "editor.codeLens": false, // ! codeLens - CodeLens - Tắt
+  "breadcrumbs.filePath": "last", // ? breadcrumbs.filePath - Breadcrumb - Tên file cuối
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true // * enabled - Màu ngữ nghĩa - Bật
+  },
+  // * ------------------------------------------------------------
+  // * [`05].TERMINAL - Shell, font chữ, lịch sử lệnh
+  // * ------------------------------------------------------------
+  "terminal.integrated.fontFamily": "'Cascadia Code', 'JetBrains Mono', 'Ubuntu Mono', 'DejaVu Sans Mono', Consolas, monospace", // ? fontFamily - Font chữ - Hỗ trợ Win/Linux
+  "terminal.integrated.fontSize": 16, // ? fontSize - Cỡ chữ - 16px
+  "terminal.integrated.fontWeight": "251", // ! fontWeight - Độ đậm - Light
+  "terminal.integrated.fontWeightBold": "251", // ! fontWeightBold - Độ đậm Bold - Extra Light (200)
+  "terminal.integrated.lineHeight": 1.3, // ? lineHeight - Chiều cao dòng - 130%
+  "terminal.integrated.letterSpacing": 1.25, // ? letterSpacing - Khoảng cách chữ - 1.25px
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // * defaultProfile.windows - Shell Win - Git Bash
+  "terminal.integrated.defaultProfile.linux": "bash", // * defaultProfile.linux - Shell Linux - Bash
+  "terminal.integrated.gpuAcceleration": "on", // * gpuAcceleration - Tăng tốc GPU - Bật
+  "terminal.integrated.smoothScrolling": false, // ! smoothScrolling - Cuộn mượt - Tắt
+  "terminal.integrated.fastScrollSensitivity": 5, // ? fastScrollSensitivity - Cuộn nhanh - x5
+  "terminal.integrated.scrollback": 10000, // ? scrollback - Lịch sử - 10000 dòng
+  "terminal.integrated.enablePersistentSessions": false, // ! enablePersistentSessions - Giữ session - Tắt
+  "terminal.integrated.persistentSessionReviveProcess": "never", // ! persistentSessionReviveProcess - Phục hồi - Không
+  "terminal.integrated.cursorStyle": "line", // ? cursorStyle - Con trỏ - Dòng
+  "terminal.integrated.copyOnSelection": true, // * copyOnSelection - Tự copy - Bật
+  "terminal.integrated.stickyScroll.enabled": false, // ! stickyScroll - Sticky scroll - Tắt
+  "terminal.integrated.initialHint": false, // ! initialHint - Gợi ý phím - Tắt
+  "terminal.integrated.env.windows": {
+    "CHCP": "65001" // * CHCP - Mã hóa - UTF-8
+  },
+  // * ------------------------------------------------------------
+  // * [`06].SUGGEST - Bảng gợi ý code (IntelliSense)
+  // * ------------------------------------------------------------
+  "editor.quickSuggestions": {
+    "comments": false, // ! comments - Gợi ý comment - Tắt
+    "strings": true, // ? strings - Gợi ý string - Bật
+    "other": true // ? other - Gợi ý code - Bật
+  },
+  "editor.suggestOnTriggerCharacters": true, // * suggestOnTriggerCharacters - Gợi ý ký tự đặc biệt - Bật
+  "editor.suggest.showStatusBar": true, // ? showStatusBar - Status bar gợi ý - Hiện
+  "editor.suggest.localityBonus": true, // ? localityBonus - Ưu tiên gần - Bật
+  "editor.suggestSelection": "recentlyUsed", // ? suggestSelection - Ưu tiên - Vừa dùng
+  "editor.suggestFontSize": 16, // ? suggestFontSize - Cỡ chữ - 16px
+  "editor.suggestLineHeight": 20, // ? suggestLineHeight - Chiều cao dòng - 20px
+  "editor.suggest.maxVisibleSuggestions": 20, // ? maxVisibleSuggestions - Số gợi ý - 20
+  "editor.acceptSuggestionOnCommitCharacter": false, // ! acceptSuggestionOnCommitCharacter - Tự chọn - Tắt
+  "editor.inlineSuggest.enabled": true, // * inlineSuggest.enabled - Gợi ý inline - Bật
+  // * ------------------------------------------------------------
+  // * [`07].FILES & EXPLORER - Quản lý file, tìm kiếm, loại trừ
+  // * ------------------------------------------------------------
+  "editor.largeFileOptimizations": true, // ! largeFileOptimizations - Tối ưu file lớn - Bật
+  "editor.maxTokenizationLineLength": 20000, // ! maxTokenizationLineLength - Giới hạn token - 20000
+  "search.followSymlinks": false, // ! followSymlinks - Theo symlink - Tắt
+  "search.useIgnoreFiles": true, // ? useIgnoreFiles - Tôn trọng gitignore - Bật
+  "explorer.compactFolders": false, // ! compactFolders - Gộp folder - Tắt
+  "explorer.fileNesting.enabled": true, // ? fileNesting.enabled - Gộp file - Bật
+  "explorer.fileNesting.expand": false, // ? fileNesting.expand - Mở rộng - Tắt
+  "files.exclude": {
+    "**/.git": false, // ? Hiện thư mục .git
+    "**/.svn": false, // ? Hiện thư mục .svn
+    "**/.hg": false, // ? Hiện thư mục .hg
+    "**/CVS": false, // ? Hiện thư mục CVS
+    "**/.DS_Store": false, // ? Hiện file rác của MacOS
+    "**/Thumbs.db": false // ? Hiện file rác của Windows
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true, // ! node_modules - Dependencies
+    "**/bower_components/**": true, // ! bower_components - Dependencies
+    "**/.venv/**": true, // ! .venv - Môi trường Python
+    "**/__pycache__/**": true, // ! __pycache__ - Bytecode Python
+    "**/dist/**": true, // ! dist - Output build
+    "**/build/**": true, // ! build - Output build
+    "**/out/**": true, // ! out - Output build
+    "**/bin/**": true, // ! bin - Output binary
+    "**/obj/**": true, // ! obj - Object files
+    "**/target/**": true, // ! target - Output build
+    "**/.next/**": true, // ! .next - Cache build
+    "**/.vs/**": true, // ! .vs - Cache IDE
+    "**/TestResults/**": true, // ! TestResults - Kết quả test
+    "**/.cache/**": true, // ! .cache - Cache chung
+    "**/.git/objects/**": true, // ! .git/objects - Object Git
+    "**/.git/subtree-cache/**": true // ! .git/subtree-cache - Cache Git
+  },
+  "search.exclude": {
+    "**/node_modules": true, // ! node_modules - Dependencies
+    "**/bower_components": true, // ! bower_components - Dependencies
+    "**/.venv": true, // ! .venv - Môi trường Python
+    "**/__pycache__": true, // ! __pycache__ - Bytecode Python
+    "**/dist": true, // ! dist - Output build
+    "**/build": true, // ! build - Output build
+    "**/bin": true, // ! bin - Output binary
+    "**/obj": true, // ! obj - Object files
+    "**/target": true, // ! target - Output build
+    "**/.next": true, // ! .next - Cache build
+    "**/.vs": true, // ! .vs - Cache IDE
+    "**/TestResults": true // ! TestResults - Kết quả test
+  },
+  "files.readonlyInclude": {
+    "**/*.lock": true // ! *.lock - Khóa file - Tránh sửa nhầm
+  },
+  // * ------------------------------------------------------------
+  // * [`08].GIT - Cấu hình Git, Sync Settings
+  // * ------------------------------------------------------------
+  "git.enableSmartCommit": false, // ! enableSmartCommit - Commit không stage - Tắt
+  "git.confirmSync": false, // ! confirmSync - Xác nhận sync - Tắt
+  "git.autofetch": false, // ! autofetch - Tự fetch - Tắt
+  "git.autofetchPeriod": 180, // ? autofetchPeriod - Chu kỳ fetch -  180s
+  "git.openRepositoryInParentFolders": "never", // ! openRepositoryInParentFolders - Mở repo cha - Không
+  // ! Windows SSH Path: Dùng Linux thì comment dòng dưới
+  "git.sshCommand": "C:\\Program Files\\Git\\usr\\bin\\ssh.exe", // ! sshCommand - SSH - Windows Path
+  // * ------------------------------------------------------------
+  // * [`09].MISC & AI - Cài đặt AI, Chat, Debug, ErrorLens
+  // * ------------------------------------------------------------
+  "diffEditor.ignoreTrimWhitespace": false, // ! ignoreTrimWhitespace - Diff khoảng trắng - Bật
+  "problems.showCurrentInStatus": true, // ? showCurrentInStatus - Lỗi status bar - Hiện
+  "markdown.preview.fontFamily": "-apple-system, 'Segoe UI', sans-serif", // ? preview.fontFamily - Font markdown - System
+  "debug.console.fontFamily": "'Cascadia Code', Consolas, monospace", // ? console.fontFamily - Font debug - Cascadia
+  "debug.console.fontSize": 13, // ? console.fontSize - Cỡ chữ debug - 13px
+  // AI & Chat Configs
+  "chat.disableAIFeatures": false, // * disableAIFeatures - Tắt toàn bộ AI (Giữ false để dùng Chat)
+  "chat.stickyScroll.enabled": false, // ! chat.stickyScroll - Sticky chat - Tắt
+  "chat.agent.networkFilter": true, // ? agent.networkFilter - Lọc mạng - Bật
+  "chat.unifiedAgentsBar.enabled": true, // ? unifiedAgentsBar - Thanh agent - Bật
+  "github.copilot.enable": { // ! Tắt gợi ý (ghost text) của Copilot
+    "*": false
+  },
+  "github.copilot.completions.chat.enabled": true, // * Bật Chat của Copilot
+  // ErrorLens - Độc Quyền
+  "errorLens.enabledDiagnosticLevels": [
+    "error" // ! error - Mức độ - Chỉ lỗi
+  ],
+  "errorLens.statusBarColorsEnabled": true, // ? statusBarColorsEnabled - Màu status bar - Bật
+  // * ------------------------------------------------------------
+  // * [`10].TELEMETRY - Dữ liệu, bảo mật, cập nhật extension
+  // * ------------------------------------------------------------
+  "telemetry.telemetryLevel": "off", // ! telemetryLevel - Telemetry - Tắt
+  "telemetry.editStats.showStatusBar": true, // ? editStats.showStatusBar - Thống kê edit - Hiện
+  "redhat.telemetry.enabled": false, // ! redhat.telemetry - Telemetry RedHat - Tắt
+  "extensions.autoUpdate": "off", // ! autoUpdate - Cập nhật ext - Tắt
+  // * ------------------------------------------------------------
+  // * [`11].EXTENSION - Cấu hình riêng cho các extension
+  // * ------------------------------------------------------------
+  //Prettier
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features" // ? defaultFormatter - Formatter - Native JSON
+  },
+  // Sync Settings (Extension)
+  "syncSettings.resources": [ // ? resources - Danh sách tài nguyên đồng bộ
+    "extensions",
+    "keybindings",
+    "settings",
+    "snippets",
+    "tasks",
+    "uiState",
+    "mcp"
+  ],
+  // ? Commit Message Template: <branch> type(scope) profile hostname - [LOG::time] = message
+  "syncSettings.gitUpdateMessage": "<main> chore(Update)/{{profile}} {{hostname}} - [LOG::{{now|date:iso}}] = Cập nhật propmt8-ext_SettingSync README.md",
+  "syncSettings.gitInitMessage": "<main> feat(Init)/{{profile}} {{hostname}} - [LOG::{{now|date:iso}}] = Khởi tạo project by ext_SettingSync zokugun",
+} //``end

@@ -1,0 +1,51 @@
+disabled: []
+enabled:
+  - id: aaron-bond.better-comments
+    uuid: 7a0110bb-231a-4598-aa1b-0769ea46d28b
+  - id: alefragnani.Bookmarks
+    uuid: b689fcc8-d494-4dbf-a228-2c694a578afc
+    version: 14.1.1
+  - id: ArthurLobo.easy-codesnap
+    uuid: 74ee6421-4ae5-4bdc-b642-afa6fd1a2522
+    version: 1.37.8
+  - id: chouzz.vscode-better-align
+    uuid: f5a6ecde-96ce-4fde-8744-ab88c7727069
+  - id: Compulim.vscode-clock
+    uuid: 50810048-1465-4380-9716-6cd466f2ef8e
+    version: 0.0.1
+  - id: esbenp.prettier-vscode
+    uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
+    version: 12.4.0
+  - id: file-icons.file-icons
+    uuid: 43335a8d-5929-408b-874a-65f08362642c
+    version: 1.1.0
+  - id: flyfly6.terminal-in-status-bar
+    uuid: cba0f43a-221e-4a75-882a-c5aade906f0f
+    version: 0.2.0
+  - id: georglauterbach.evergruv
+    uuid: 05f5a221-5c52-4bd1-bcc3-a43903498294
+    version: 0.6.0
+  - id: IBM.output-colorizer
+    uuid: 113b22c8-8125-42ec-8c6b-80c3f5d5fa5f
+    version: 0.1.2
+  - id: lakshits11.best-themes-redefined
+    uuid: c3b1038a-d886-4317-940c-01b7c3fdcf3b
+    version: 0.4.6
+  - id: mads-hartmann.bash-ide-vscode
+    uuid: b1b0f283-8246-4e90-832e-a6c409d378d1
+  - id: naumovs.color-highlight
+    uuid: 121396ad-85a1-45ec-9fd1-d95028a847f5
+    version: 2.8.0
+  - id: ryanolsonx.solarized
+    uuid: 7228c862-21fb-4a4c-a50a-8dfb4ca8c691
+    version: 3.0.0
+  - id: s-nlf-fh.glassit
+    uuid: 7f4f553c-204c-42fe-9b4d-7a3f11f7335b
+    version: 0.2.6
+  - id: timonwong.shellcheck
+    uuid: f95d8fff-f70a-4ae5-bb06-5c47ddbc8fc6
+  - id: usernamehw.errorlens
+    uuid: 9d8c32ab-354c-4daf-a9bf-20b633734435
+    version: 3.30.0
+  - id: zokugun.cron-tasks
+    uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb
