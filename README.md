@@ -14,3 +14,5 @@
 ### Contributes: <ul> <li>Color git diff Red/Green</li> <li>Theme Arduino Theme</li> <li>Auto Bash-Shell .dev -> git commit + time now = commit.shell</li> <li>Task and Launch .js</li> </ul>
 
 ### Issue: <ul> <li>Debug VSCode + Extension Language</li> <li>Theme Arduino Theme</li> </ul>
+
+# # *Get'started & Usage*
